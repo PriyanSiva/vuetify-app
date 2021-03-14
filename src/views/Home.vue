@@ -21,7 +21,7 @@
 
           <template v-slot:default="{ active }">
             <v-list-item-action>
-              <v-checkbox :input-value="active"></v-checkbox>
+              <v-checkbox :input-value="active" v-model="task.done"></v-checkbox>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -59,7 +59,7 @@ export default {
         {
           id: '1',
           title: 'Wakeup',
-          done: false
+          done: true
         },
         {
           id: '2',
